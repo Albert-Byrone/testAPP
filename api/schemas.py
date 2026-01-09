@@ -18,10 +18,15 @@ class UserRead(UserBase):
     class Config:
         from_attributes = True
 
+class UserLogin(BaseModel):
+    username: str
+    password: str
+
+
 
 # {
 #   "username": "test",
 #   "email": "test@test.com",
 #   "role": "user", # optional, defaults to "user"
-#   "password": "test"
+#   "password": "test" "yefevfcevfe"
 # }
